@@ -1,84 +1,209 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>松原運輸倉庫株式会社｜TOPページ</title>
 
-<!-- CSS -->
-<link rel="stylesheet" href="css/style.css">
+<style>
+html { scroll-behavior: smooth; }
+
+.matsu-wrap * { box-sizing: border-box; }
+.matsu-wrap {
+  font-family: "Hiragino Sans","Yu Gothic",sans-serif;
+  margin:0; padding:0;
+  background:#f5f7fa;
+  color:#222;
+  line-height:1.85;
+}
+
+/* ヘッダー */
+.matsu-wrap header {
+  width:100%; max-width:1100px; height:300px;
+  background: linear-gradient(rgba(0,96,160,0.60), rgba(0,96,160,0.70)),
+              url('https://files.catbox.moe/xkmkcm.jpeg') center/cover no-repeat;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  letter-spacing:0.5px;
+  box-shadow:0 4px 22px rgba(0,0,0,0.18);
+  border-radius:14px;
+  margin:20px 0;
+}
+.matsu-wrap header .banner-text h1 {
+  margin:0;
+  font-size:2rem;
+  font-weight:800;
+  text-shadow:0 2px 12px rgba(0,0,0,0.25);
+}
+.matsu-wrap header .banner-text p {
+  margin-top:10px;
+  font-size:1rem;
+  opacity:0.98;
+}
+
+/* ナビ */
+.matsu-wrap .mini-nav {
+  text-align:center; margin-top:8px;
+}
+.matsu-wrap .mini-nav a {
+  display:inline-block; margin:0 12px;
+  color:#1f67a6; text-decoration:none; font-weight:700;
+}
+
+/* セクション */
+.matsu-wrap section {
+  background:linear-gradient(135deg, #fff, #f9fbfe);
+  padding:28px;
+  border-radius:12px;
+  margin-bottom:22px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+  border:1px solid #e1eff9;
+}
+.matsu-wrap h2 {
+  color:#1a5c9c;
+  border-left:6px solid #5cb4ff;
+  padding-left:12px;
+  margin-bottom:20px;
+  font-size:1.5rem;
+  position:relative;
+}
+.matsu-wrap h2::after {
+  content:"";
+  position:absolute;
+  bottom:-6px; left:0;
+  width:120px; height:3px;
+  background:linear-gradient(90deg,#5cb4ff,transparent);
+  border-radius:4px;
+}
+
+/* リスト */
+.matsu-wrap ul { list-style:none; padding:0; margin:0; }
+.matsu-wrap li { margin-bottom:8px; font-size:1rem; }
+
+/* フォーム */
+.contact-form-wrap {
+  background:#ffffff;
+  padding:22px;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  border:1px solid #dceeff;
+  margin-top:18px;
+}
+.contact-form-wrap label { font-weight:700; color:#1a5c9c; }
+.contact-form-wrap input,
+.contact-form-wrap textarea {
+  width:100%; padding:12px; margin-top:6px; margin-bottom:14px;
+  border-radius:10px; border:1px solid #cfe4f7; background:#f9fcff; font-size:1rem;
+}
+.contact-form-wrap textarea { height:140px; }
+.contact-form-wrap button {
+  display:block; width:100%;
+  background:linear-gradient(#1f67a6,#164d7a);
+  color:#fff; padding:14px 0; border-radius:12px; border:0;
+  font-size:1.1rem; font-weight:700;
+  box-shadow:0 5px 14px rgba(0,0,0,0.18);
+  cursor:pointer; transition:0.2s;
+}
+.contact-form-wrap button:hover {
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* フッター */
+.matsu-wrap footer {
+  text-align:center;
+  padding:20px; margin-top:12px;
+  color:#fff; background:#1f67a6;
+  border-radius:8px;
+  box-shadow:0 -4px 12px rgba(0,0,0,0.06);
+}
+
+/* スマホ対応 */
+@media (max-width:700px){
+  .matsu-wrap header { height:200px; padding:0 10px; }
+  .matsu-wrap header .banner-text h1 { font-size:1.4rem; }
+  .matsu-wrap header .banner-text p { font-size:0.9rem; }
+  .matsu-wrap .mini-nav a { display:block; margin:6px 0; }
+  .matsu-wrap section { padding:18px; }
+  .matsu-wrap h2 { font-size:1.2rem; }
+}
+</style>
 </head>
+
 <body>
-<div class="matsu-wrap">
+<div class="matsu-wrap" style="max-width:1100px;margin:0 auto;">
 
-  <header>
-    <div class="banner-text">
-      <h1>松原運輸倉庫株式会社</h1>
-      <p>安全第一で信頼を運ぶ、物流パートナー</p>
-    </div>
-  </header>
-
-  <div class="mini-nav">
-    <a href="#about">会社概要</a> |
-    <a href="#service">事業内容</a> |
-    <a href="recruit.html">採用情報</a> |
-    <a href="#access">アクセス</a> |
-    <a href="#contact">お問い合わせ</a>
+<header>
+  <div class="banner-text">
+    <h1>松原運輸倉庫株式会社</h1>
+    <p>安全第一で信頼を運ぶ、物流パートナー</p>
   </div>
+</header>
 
-  <section id="about">
-    <h2>会社概要</h2>
-    <p>松原運輸倉庫株式会社は、静岡県袋井市を拠点に法人企業様向けの一般貨物運送を行っております。<br>
-    「安全第一」をモットーに、確実で丁寧な輸送サービスを提供しています。</p>
-    <ul>
-      <li><strong>会社名：</strong>松原運輸倉庫株式会社</li>
-      <li><strong>所在地：</strong>〒437-0004 静岡県袋井市松原2471</li>
-      <li><strong>電話番号：</strong>0538-23-9568</li>
-      <li><strong>メール：</strong><a href="mailto:matsubara9568@ocn.ne.jp">matsubara9568@ocn.ne.jp</a></li>
-    </ul>
-  </section>
+<div class="mini-nav">
+  <a href="#about">会社概要</a> |
+  <a href="#service">事業内容</a> |
+  <a href="recruit.html">採用情報</a> |
+  <a href="#access">アクセス</a> |
+  <a href="#contact">お問い合わせ</a>
+</div>
 
-  <section id="service">
-    <h2>事業内容</h2>
-    <p>法人企業を中心とした一般貨物運送事業を展開しております。</p>
-    <ul>
-      <li>大型トラックによる一般貨物運送</li>
-      <li>安全管理の徹底</li>
-    </ul>
-  </section>
+<section id="about">
+  <h2>会社概要</h2>
+  <p>松原運輸倉庫株式会社は、静岡県袋井市を拠点に法人企業様向けの一般貨物運送を行っております。<br>
+  「安全第一」をモットーに、確実で丁寧な輸送サービスを提供しています。</p>
+  <ul>
+    <li><strong>会社名：</strong>松原運輸倉庫株式会社</li>
+    <li><strong>所在地：</strong>〒437-0004 静岡県袋井市松原2471</li>
+    <li><strong>電話番号：</strong>0538-23-9568</li>
+    <li><strong>メール：</strong><a href="mailto:matsubara9568@ocn.ne.jp">matsubara9568@ocn.ne.jp</a></li>
+  </ul>
+</section>
 
-  <section id="recruit">
-    <h2>採用情報（詳細は採用ページへ）</h2>
-    <p>大型トラックドライバーを募集しています。詳しくは採用ページをご覧ください。</p>
-    <p><a href="recruit.html" class="btn">採用ページへ →</a></p>
-  </section>
+<section id="service">
+  <h2>事業内容</h2>
+  <p>法人企業を中心とした一般貨物運送事業を展開しております。</p>
+  <ul>
+    <li>大型トラックによる一般貨物運送</li>
+    <li>安全管理の徹底</li>
+  </ul>
+</section>
 
-  <section id="access">
-    <h2>アクセス</h2>
-    <p>静岡県袋井市松原2471</p>
-    <iframe src="https://www.google.com/maps?q=静岡県袋井市松原2471&output=embed"
-            loading="lazy"></iframe>
-  </section>
+<section id="recruit">
+  <h2>採用情報（詳細は採用ページへ）</h2>
+  <p>大型トラックドライバーを募集しています。詳しくは採用ページをご覧ください。</p>
+  <p><a href="recruit.html" style="display:inline-block;background:#1b63a5;color:#fff;padding:14px 28px;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,0.15);transition:0.3s;">採用ページへ →</a></p>
+</section>
 
-  <section id="contact">
-    <h2>お問い合わせ</h2>
-    <div class="contact-form-wrap">
-      <form action="https://formspree.io/f/mnnlqdge" method="POST">
-        <label>お名前：</label>
-        <input type="text" name="name" required>
-        <label>メールアドレス：</label>
-        <input type="email" name="email" required>
-        <label>お問い合わせ内容：</label>
-        <textarea name="message" required></textarea>
-        <button type="submit">送信する</button>
-        <p class="privacy-link">
-          <a href="privacy.html">プライバシーポリシーはこちら</a>
-        </p>
-      </form>
-    </div>
-  </section>
+<section id="access">
+  <h2>アクセス</h2>
+  <p>静岡県袋井市松原2471</p>
+  <iframe src="https://www.google.com/maps?q=静岡県袋井市松原2471&output=embed"
+          loading="lazy" style="width:100%;height:340px;border:0;border-radius:10px;"></iframe>
+</section>
 
-  <footer>© 松原運輸倉庫株式会社 All Rights Reserved.</footer>
+<section id="contact" class="contact">
+  <h2>お問い合わせ</h2>
+  <div class="contact-form-wrap">
+    <form action="https://formspree.io/f/mnnlqdge" method="POST">
+      <label>お名前：</label>
+      <input type="text" name="name" required>
+      <label>メールアドレス：</label>
+      <input type="email" name="email" required>
+      <label>お問い合わせ内容：</label>
+      <textarea name="message" required></textarea>
+      <button type="submit">送信する</button>
+      <p style="margin-top:14px;font-size:0.95rem;text-align:center;">
+        <a href="privacy.html" style="color:#1a5c9c;text-decoration:underline;font-weight:700;">プライバシーポリシーはこちら</a>
+      </p>
+    </form>
+  </div>
+</section>
+
+<footer>© 松原運輸倉庫株式会社 All Rights Reserved.</footer>
 
 </div>
 </body>
