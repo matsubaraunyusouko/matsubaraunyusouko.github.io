@@ -1,189 +1,101 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>松原運輸倉庫株式会社｜会社案内</title>
-
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>松原運輸倉庫株式会社</title>
 <style>
-.matsu-wrap * { box-sizing: border-box; }
-.matsu-wrap {
-  font-family: "Hiragino Sans","Yu Gothic",sans-serif;
-  margin:0; padding:0;
-  background:#f5f7fa;
-  color:#222;
-  line-height:1.85;
-}
-html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; }
+  body { margin:0; font-family:"Hiragino Sans","Yu Gothic",sans-serif; background:#f5f7fa; color:#222; line-height:1.85; }
 
-/* ここから下はあなたのCSSをそのまま保持 */
-.matsu-wrap header {
-  width:100%; max-width:1100px; height:300px;
-  background: linear-gradient(rgba(0,0,0,.40), rgba(0,0,0,0.70)),
-  url("https://film.cotton.onl/window.jpg") center/cover no-repeat;
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  border-bottom:3px solid #004aad;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-  margin:0 auto;
-}
+  .wrap { max-width:1100px; margin:0 auto; padding:20px; box-sizing:border-box; }
 
-.matsu-wrap header .banner-text h1 {
-  margin:0;
-  font-size:27px;
-  font-weight:700;
-  text-shadow: 0px 2px 3px rgba(0,0,0,0.75);
-}
-.matsu-wrap header .banner-text p {
-  margin-top:8px;
-  font-size:16px;
-  font-weight:500;
-}
+  header#top {
+    height:300px;
+    background: linear-gradient(rgba(0,0,0,.40), rgba(0,0,0,0.70)), url("https://film.cotton.onl/window.jpg") center/cover no-repeat;
+    color:#fff; display:flex; align-items:center; justify-content:center; text-align:center; margin-bottom:12px;
+  }
 
-/* ナビ */
-.matsu-wrap .matu-nav {
-  text-align:center; margin:10px;
-}
-.matu-nav .nav-inner a {
-  display:inline-block; margin:12px;
-  text-decoration:none; font-weight:700;
-  color:#004aad;
-}
+  nav { text-align:center; margin:10px 0; }
+  nav a { display:inline-block; margin:0 10px; text-decoration:none; color:#004aad; font-weight:700; }
 
-/* セクション */
-.matsu-wrap section {
-  background:linear-gradient(155deg, #fff, #f6f9ff);
-  padding:15px;
-  border-radius:12px;
-  margin-bottom:22px;
-  box-shadow: 0 4px 13px rgba(0,0,0,0.05);
-  border:0.5px solid #d0e7ff;
-}
-.matsu-wrap h2 {
-  color:#004aad;
-  border-left:6px solid #4c8eff;
-  padding-left:12px;
-  margin-bottom:10px;
-  font-size:23px;
-  font-weight:650;
-}
-.matsu-wrap ul {
-  padding-left:20px;
-}
-.matsu-wrap ul li { margin-bottom:8px; }
+  /* ← ここが重要：セクションにスクロールできる高さを確保する */
+  section {
+    background: linear-gradient(155deg,#fff,#f6f9ff);
+    padding:20px; border-radius:12px; margin-bottom:22px;
+    box-shadow:0 4px 13px rgba(0,0,0,0.05); border:0.5px solid #d0e7ff;
+    min-height:520px; /* ここで縦長にしてスクロールを確実に発生させる */
+  }
+  section h2 { color:#004aad; border-left:6px solid #4c8eff; padding-left:12px; margin-top:0; }
 
-/* リスト */
-.matsu-wrap ul li { list-style:none; padding:8px; margin:6px; }
-.matsu-wrap ul li strong { font-size:1.2rem; }
+  /* フォームなどは内部で縮むのでそのまま */
+  .contact-form-wrap { background:#fff; padding:18px; border-radius:12px; }
+  .contact-form-wrap input, .contact-form-wrap textarea { width:100%; padding:12px; margin-bottom:12px; border-radius:8px; border:1px solid #d0e7ff; }
+  .contact-form-wrap button { width:100%; padding:12px; background:#0057b8; color:#fff; border:none; border-radius:8px; cursor:pointer; }
 
-/* フォーム */
-.contact-form-wrap { background:#fff; padding:18px; border-radius:12px; margin-bottom:18px; }
-.contact-form-wrap input, .contact-form-wrap textarea {
-  width:100%; padding:12px; margin-bottom:14px;
-  border-radius:8px; border:1.5px solid #d0e7ff; font-size:17px;
-}
-.contact-form-wrap button {
-  width:100%; padding:13px;
-  background:#0057b8; color:#fff; border:none;
-  border-radius:9px; font-size:19px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-  cursor:pointer; transition:.3s;
-}
-.contact-form-wrap button:hover { transform:translateY(-2px); }
+  footer { text-align:center; padding:12px; color:#fff; background:#003b72; margin-top:20px; }
 
-/* フッター */
-.matsu-wrap footer {
-  text-align:center; padding:12px;
-  color:#fff; background:#003b72;
-  border-radius:0;
-  box-shadow: 0px -2px 12px rgba(0,0,0,0.08);
-}
-
-@media (max-width:780px){
-  .matsu-wrap header { height:220px; padding:0 10px; }
-}
+  @media (max-width:780px){
+    header#top { height:200px; }
+    section { min-height:380px; }
+  }
 </style>
-
 </head>
 <body>
-
-<div class="matsu-wrap">
+<div class="wrap">
 
 <header id="top">
-  <div class="banner-text">
-    <h1>松原運輸倉庫株式会社</h1>
-    <p>安全と信頼をお届けする物流パートナーです</p>
+  <div>
+    <h1 style="margin:0;font-size:26px;">松原運輸倉庫株式会社</h1>
+    <p style="margin:8px 0 0;">安全と信頼をお届けする物流パートナーです</p>
   </div>
 </header>
 
-<!-- ▼▼▼ 修正したメニュー（スクロール用リンク） ▼▼▼ -->
-<nav class="matu-nav">
-  <div class="nav-inner">
-    <a href="#about">会社概要</a>｜
-    <a href="#service">事業内容</a>｜
-    <a href="#recruit">採用情報</a>｜
-    <a href="#contact">お問い合わせ</a>｜
-    <a href="#top">TOP</a>
-  </div>
+<nav>
+  <!-- ここがページ内スクロール用リンク -->
+  <a href="#about">会社概要</a>｜
+  <a href="#service">事業内容</a>｜
+  <a href="#recruit">採用情報</a>｜
+  <a href="#contact">お問い合わせ</a>｜
+  <a href="#top">TOP</a>
 </nav>
-<!-- ▲▲▲ ここだけ書き換えています ▲▲▲ -->
 
 <section id="about">
   <h2>会社概要</h2>
   <p>当社は倉庫管理業務および、関西地域を中心に法人様向けの一般貨物輸送を行っております。</p>
-
   <ul>
     <li><strong>所在地：</strong>大阪府松原市XXXXXXXX</li>
     <li><strong>電話番号：</strong>072-XXX-XXXX</li>
-    <li><strong>メール：</strong><a href="mailto:matsubarunsou@xxxx.co.jp">matsubarunsou@xxxx.co.jp</a></li>
   </ul>
 </section>
 
 <section id="service">
   <h2>事業内容</h2>
   <ul>
-    <li>一般貨物運送および構内作業委託業務</li>
-    <li>倉庫管理・在庫管理業務</li>
-    <li>荷役作業およびフォークリフト作業全般</li>
+    <li>一般貨物運送および構内作業委託</li>
+    <li>倉庫管理・在庫管理</li>
+    <li>荷役作業およびフォークリフト作業</li>
   </ul>
 </section>
 
 <section id="recruit">
-  <h2>採用情報（大型ドライバー・リフト作業員）</h2>
-
-  <p>大型ドライバーおよびリフト作業員を募集しております。詳しくは採用ページをご覧ください。</p>
-  
-  <p><a href="https://mlten.smp.ne.jp/enq/xxxxxxxx-info/recruit" style="padding:8px 18px; background:#0057b8; color:#fff; border-radius:6px; text-decoration:none;">採用フォームはこちら</a></p>
+  <h2>採用情報</h2>
+  <p>大型ドライバー、リフト作業員を募集しております。</p>
+  <p><a href="https://mlten.smp.ne.jp/enq/xxxxxxxx-info/recruit" target="_blank" rel="noopener" style="background:#0057b8;color:#fff;padding:8px 14px;border-radius:6px;text-decoration:none;">採用フォームへ</a></p>
 </section>
 
 <section id="contact">
   <h2>お問い合わせ</h2>
-  
-  <form class="contact-form-wrap" action="https://docs.google.com/forms/d/e/xxxxxxxx/formResponse" method="POST">
-    <label>お名前</label>
-    <input type="text" name="entry.XXXXX" required>
-
-    <label>メールアドレス</label>
-    <input type="email" name="entry.XXXXX" required>
-
-    <label>お問い合わせ内容</label>
-    <textarea name="entry.XXXXX" rows="5" required></textarea>
-
+  <form class="contact-form-wrap" action="#" method="POST">
+    <input type="text" name="name" placeholder="お名前" required>
+    <input type="email" name="email" placeholder="メール" required>
+    <textarea name="message" rows="6" placeholder="お問い合わせ内容" required></textarea>
     <button type="submit">送信する</button>
   </form>
-
-  <p style="text-align:center; font-size:14px; color:#555;">このフォームはGoogleフォームを利用しています。</p>
 </section>
 
-<footer>
-  © 松原運輸倉庫株式会社 All Rights Reserved.
-</footer>
+<footer>© 松原運輸倉庫株式会社</footer>
 
 </div>
-
 </body>
 </html>
