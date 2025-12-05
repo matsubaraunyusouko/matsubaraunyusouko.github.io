@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>松原運輸倉庫株式会社｜TOPページ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>松原運輸倉庫株式会社｜TOP</title>
 
 <style>
-html { scroll-behavior: smooth; }
-
 .matsu-wrap * { box-sizing: border-box; }
 .matsu-wrap {
   font-family: "Hiragino Sans","Yu Gothic",sans-serif;
@@ -21,7 +20,7 @@ html { scroll-behavior: smooth; }
 .matsu-wrap header {
   width:100%; max-width:1100px; height:300px;
   background: linear-gradient(rgba(0,96,160,0.60), rgba(0,96,160,0.70)),
-              url('images/xkmkcm.jpeg') center/cover no-repeat;
+              url('./images/xkmkcm.jpeg') center/cover no-repeat;
   color:#fff;
   display:flex;
   align-items:center;
@@ -30,7 +29,7 @@ html { scroll-behavior: smooth; }
   letter-spacing:0.5px;
   box-shadow:0 4px 22px rgba(0,0,0,0.18);
   border-radius:14px;
-  margin:20px 0;
+  margin:20px auto;
 }
 .matsu-wrap header .banner-text h1 {
   margin:0;
@@ -58,9 +57,10 @@ html { scroll-behavior: smooth; }
   background:linear-gradient(135deg, #fff, #f9fbfe);
   padding:28px;
   border-radius:12px;
-  margin-bottom:22px;
+  margin:22px auto;
   box-shadow:0 6px 18px rgba(0,0,0,0.05);
   border:1px solid #e1eff9;
+  max-width:1100px;
 }
 .matsu-wrap h2 {
   color:#1a5c9c;
@@ -99,6 +99,7 @@ html { scroll-behavior: smooth; }
   border-radius:10px; border:1px solid #cfe4f7; background:#f9fcff; font-size:1rem;
 }
 .contact-form-wrap textarea { height:140px; }
+
 .contact-form-wrap button {
   display:block; width:100%;
   background:linear-gradient(#1f67a6,#164d7a);
@@ -197,7 +198,9 @@ html { scroll-behavior: smooth; }
       <textarea name="message" required></textarea>
       <button type="submit">送信する</button>
       <p style="margin-top:14px;font-size:0.95rem;text-align:center;">
-        <a href="privacy.html" style="color:#1a5c9c;text-decoration:underline;font-weight:700;">プライバシーポリシーはこちら</a>
+        <a href="privacy.html" style="color:#1a5c9c;text-decoration:underline;font-weight:700;">
+          プライバシーポリシーはこちら
+        </a>
       </p>
     </form>
   </div>
