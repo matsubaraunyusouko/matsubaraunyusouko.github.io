@@ -1,0 +1,25 @@
+name: Update sitemap lastmod
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 毎日0時に自動実行
+  workflow_dispatch:      # 手動実行ボタンも追加
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Update lastmod
+        run: |
+          TODAY=$(date -I)
+          sed -i "s#<lastmod>.*</lastmod>#<lastmod>${TODAY}</lastmod>#g" sitemap.xml
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions"
+          git add sitemap.xml
+          git commit -m "Auto-update sitemap lastmod" || echo "No changes"
+          git push
