@@ -2,129 +2,156 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-<title>松原運輸倉庫株式会社｜大型トラックドライバー採用｜静岡県袋井市</title>
-
-<meta name="description"
-      content="松原運輸倉庫株式会社では、静岡県袋井市で大型トラックドライバーを募集しています。法人向け一般貨物運送を行う安定した環境で、安全第一を大切にしながら働けます。">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>松原運輸倉庫株式会社｜採用情報</title>
 
 <style>
-.matsu-wrap * { box-sizing: border-box; }
-.matsu-wrap {
-  font-family: "Hiragino Sans","Yu Gothic",sans-serif;
-  margin:0; padding:0;
-  background:#f5f7fa;
-  color:#222;
-  line-height:1.85;
+/* ここからデザイン（元のまま、パスだけ修正済み） */
+.matsu-recruit * { box-sizing: border-box; }
+.matsu-recruit {
+  font-family:"Hiragino Sans","Yu Gothic","Noto Sans JP",sans-serif;
+  margin:0; padding:0; background:#f5f7fa; color:#222; line-height:1.85;
+}
+header {
+  width:100%; max-width:1100px; height:300px;
+  background: linear-gradient(rgba(0,96,160,0.60), rgba(0,96,160,0.70)),
+              url('images/xkmkcm.jpeg') center/cover no-repeat;
+  color:#fff; display:flex; align-items:center; justify-content:center;
+  text-align:center; box-shadow:0 4px 22px rgba(0,0,0,0.20);
+  border-radius:14px; margin:20px auto;
+}
+header h1 { font-size:2rem; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,0.25); }
+header p { margin-top:10px; font-size:1rem; opacity:0.95; }
+
+nav {
+  background:#1f67a6; padding:12px 0; text-align:center;
+  box-shadow:0 3px 14px rgba(0,0,0,0.18); border-radius:8px; margin-bottom:20px;
+}
+nav a {
+  color:#fff; margin:0 12px; text-decoration:none; font-weight:700; font-size:1rem;
+  border-bottom:2px solid transparent; padding-bottom:4px; transition:0.25s;
+}
+nav a:hover { border-bottom:2px solid #a9d4ff; }
+
+section {
+  max-width:1100px; margin:30px auto; background:linear-gradient(135deg,#fff,#f9fbfe);
+  padding:40px 28px; border-radius:12px; border:1px solid #e1eff9;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06); position:relative;
+}
+section:before {
+  content:""; position:absolute; top:-6px; left:20px; width:70px; height:6px;
+  background:#a7d2ff; border-radius:6px;
+}
+h2 {
+  color:#1a5c9c; border-left:6px solid #5cb4ff; padding-left:14px;
+  margin-bottom:26px; font-size:1.5rem; font-weight:700; position:relative;
+}
+h2::after {
+  content:""; position:absolute; bottom:-6px; left:0; width:120px; height:3px;
+  background:linear-gradient(90deg,#5cb4ff,transparent); border-radius:4px;
+}
+.box {
+  background:#fff; border:1px solid #d7e7f7; border-radius:12px;
+  padding:24px; margin-bottom:30px; box-shadow:0 4px 14px rgba(0,0,0,0.05);
 }
 
-/* ヘッダー */
-.matsu-wrap header {
-  width:100%; max-width:1100px; height:260px;
-  background: linear-gradient(rgba(0,96,160,0.60), rgba(0,96,160,0.70));
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  border-radius:14px;
-  margin:20px auto;
+form label { font-weight:600; color:#1a5c9c; }
+input, textarea {
+  width:100%; padding:12px; margin-top:6px; border:1px solid #bcd4ee;
+  border-radius:10px; font-size:1rem; background:#fdfefe;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05) inset; transition:0.25s;
 }
-.matsu-wrap header h1 {
-  margin:0;
-  font-size:1.9rem;
-  font-weight:800;
-  text-shadow:0 2px 12px rgba(0,0,0,0.25);
+input:focus, textarea:focus {
+  border-color:#5cb4ff; box-shadow:0 0 8px rgba(92,180,255,0.4); outline:none;
+}
+.submit-btn {
+  background:linear-gradient(135deg,#2d7fc7,#1b63a5);
+  padding:16px 40px; color:#fff; font-weight:800; font-size:1.1rem;
+  border-radius:12px; border:none; cursor:pointer; display:inline-block;
+  margin-top:20px; box-shadow:0 6px 0 #0f3d6d; transition:0.2s ease;
+}
+.submit-btn:active { transform:translateY(4px); box-shadow:0 2px 0 #0f3d6d; }
+
+footer {
+  background:#1f67a6; color:#fff; text-align:center; padding:32px;
+  margin-top:60px; font-size:0.95rem; border-radius:8px;
+  box-shadow:0 -4px 14px rgba(0,0,0,0.06);
 }
 
-/* セクション */
-.matsu-wrap section {
-  background:#fff;
-  padding:28px;
-  border-radius:12px;
-  margin:22px auto;
-  box-shadow:0 6px 18px rgba(0,0,0,0.05);
-  border:1px solid #e1eff9;
-  max-width:1100px;
-}
-.matsu-wrap h2 {
-  color:#1a5c9c;
-  border-left:6px solid #5cb4ff;
-  padding-left:12px;
-  margin-bottom:18px;
-  font-size:1.4rem;
-}
-
-/* リスト */
-.matsu-wrap ul { padding-left:18px; }
-.matsu-wrap li { margin-bottom:8px; }
-
-/* ボタン */
-.entry-btn {
-  display:inline-block;
-  background:#1b63a5;
-  color:#fff;
-  padding:14px 32px;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:700;
-  box-shadow:0 4px 14px rgba(0,0,0,0.15);
-}
-
-/* フッター */
-.matsu-wrap footer {
-  text-align:center;
-  padding:20px;
-  color:#fff;
-  background:#1f67a6;
-  border-radius:8px;
-  margin-top:20px;
+@media (max-width:700px){
+  header { height:200px; }
+  header h1 { font-size:1.4rem; }
+  header p { font-size:0.9rem; }
+  h2 { font-size:1.25rem; }
+  section { padding:28px 18px; }
 }
 </style>
 </head>
 
 <body>
-<div class="matsu-wrap">
+<div class="matsu-recruit">
 
 <header>
-  <h1>大型トラックドライバー 採用情報</h1>
+  <div>
+    <h1>松原運輸倉庫株式会社｜採用情報</h1>
+    <p>大型ドライバー積極採用中</p>
+  </div>
 </header>
 
-<section>
-  <h2>募集職種</h2>
-  <p>大型トラックドライバー</p>
-</section>
+<nav>
+  <a href="index.html">会社トップ</a>
+  <a href="#job">仕事内容</a>
+  <a href="#req">応募資格</a>
+  <a href="#apply">応募方法</a>
+</nav>
 
-<section>
+<section id="job">
   <h2>仕事内容</h2>
-  <p>法人企業様向けの一般貨物運送業務をお任せします。安全第一を徹底し、安定した運行を行っています。</p>
+  <div class="box">
+    大型トラックによる一般貨物輸送業務を担当していただきます。  
+    自動車部品・住宅建材・飲料品の配送等を中心とし、長距離なしで無理のない運行体系です。
+  </div>
 </section>
 
-<section>
+<section id="req">
   <h2>応募資格</h2>
-  <ul>
-    <li>大型自動車免許 必須</li>
-    <li>フォークリフト免許 必須</li>
-  </ul>
+  <div class="box">
+    <ul>
+      <li>大型免許（必須）</li>
+      <li>フォークリフト免許（必須）</li>
+      <li>学歴不問</li>
+    </ul>
+    <p style="margin-top:18px; font-weight:600; color:#1a5c9c;">
+      ※大型免許取得支援制度あり（中型免許での実務経験3年以上、取得後2年以上の勤務が条件）
+    </p>
+  </div>
 </section>
 
-<section>
-  <h2>勤務地</h2>
-  <p>静岡県袋井市松原2471</p>
-</section>
-
-<section>
+<section id="apply">
   <h2>応募方法</h2>
-  <p>ご興味のある方は、お電話またはお問い合わせフォームよりご連絡ください。</p>
-  <p>
-    <a href="index.html#contact" class="entry-btn">
-      お問い合わせはこちら
-    </a>
-  </p>
+  <div class="box">
+    下記フォームより直接ご応募いただけます。お電話での応募も可能です。
+    <form action="https://formspree.io/f/mnnlqdge" method="POST" style="margin-top:18px;">
+      <label>お名前<br><input type="text" name="name" required></label><br><br>
+      <label>メールアドレス<br><input type="email" name="email" required></label><br><br>
+      <label>電話番号<br><input type="text" name="tel"></label><br><br>
+      <label>メッセージ<br><textarea name="message" rows="5" required></textarea></label><br><br>
+      <button type="submit" class="submit-btn">送信する</button>
+      <p style="margin-top:14px;font-size:0.95rem;text-align:center;">
+        <a href="privacy.html" style="color:#1a5c9c;text-decoration:underline;font-weight:700;">
+          プライバシーポリシーはこちら
+        </a>
+      </p>
+    </form>
+  </div>
 </section>
 
-<footer>© 松原運輸倉庫株式会社 All Rights Reserved.</footer>
+<footer>
+  <p>松原運輸倉庫株式会社</p>
+  <p>〒437-0004 静岡県袋井市松原2471</p>
+  <p>TEL：0538-23-9568</p>
+  <p style="margin-top:14px; opacity:0.9;">© 松原運輸倉庫株式会社</p>
+</footer>
 
 </div>
 </body>
